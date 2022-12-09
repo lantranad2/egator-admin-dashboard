@@ -1,0 +1,50 @@
+@use "../abstracts/mixins" as *;
+
+.main {
+  border: 1px solid #f00;
+
+  & > * {
+    border: 1px solid #f00;
+  }
+
+  .dashboard {
+  }
+
+  .orders {
+  }
+
+  .updates-sales {
+  }
+
+  @include lg {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    .dashboard {
+    }
+
+    .orders {
+      grid-column: 1 / -1;
+    }
+
+    .updates-sales {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+
+  @include xl-2 {
+    grid-template-columns: 5fr 2fr;
+
+    .dashboard {
+    }
+
+    .orders {
+      grid-column: 1 / 2;
+    }
+
+    .updates-sales {
+      grid-row: 1 / span 2;
+    }
+  }
+}
