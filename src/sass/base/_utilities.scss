@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+.container {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  border: 1px solid #f00;
+}

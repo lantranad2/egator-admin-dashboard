@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  &__logo {
+    width: 4.5rem;
+  }
+
+  &__heading-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: $color-heading;
+  }
+
+  &__text-emphasis {
+    color: $color-secondary;
+  }
+}
