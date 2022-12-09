@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="sass/main.scss" />
     <script type="module" src="js/script.js"></script>
   </head>
-  <body>
+  <body class="container">
     <nav class="nav">
-      <div class="nav__content container">
+      <div class="nav__content">
         <a href="#" class="brand nav__brand">
           <img class="brand__logo" src="assets/logo.png" alt="Logo" />
           <span class="brand__heading-text"
@@ -38,10 +38,16 @@
           menu
         </span>
         <div class="nav__mode">
-          <span class="material-symbols-sharp icon nav__light-mode active">
+          <span
+            class="material-symbols-sharp icon nav__light-mode active"
+            id="nav__light-mode"
+          >
             light_mode
           </span>
-          <span class="material-symbols-sharp icon nav__dark-mode">
+          <span
+            class="material-symbols-sharp icon nav__dark-mode"
+            id="nav__dark-mode"
+          >
             dark_mode
           </span>
         </div>

@@ -13,10 +13,10 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.4rem;
-    color: $color-heading;
+    color: var(--color-heading);
   }
 
   &__text-emphasis {
-    color: $color-secondary;
+    color: var(--color-secondary);
   }
 }

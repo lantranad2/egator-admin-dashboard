@@ -2,44 +2,26 @@
 @use "../abstracts/mixins" as *;
 
 .aside {
-  border: 1px solid #f00;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 21rem;
   height: 100vh;
-  background: $color-light;
+  background: inherit;
   transform: translateX(-101%);
   transition: 0.5s ease-in-out;
+  color: var(--color-muted);
 
   &__heading {
     display: flex;
     align-items: center;
     gap: 3px;
     padding-left: $gutter;
-
     height: 7rem;
   }
 
-  // &__logo {
-  //   width: 4.5rem;
-  //   height: 4.5rem;
-  // }
-
-  // &__heading-text {
-  //   text-transform: uppercase;
-  //   font-weight: 700;
-  //   font-size: 2.4rem;
-  //   color: $color-heading;
-  // }
-
-  // &__text-emphasis {
-  //   color: $color-secondary;
-  // }
-
   &__icon-close {
-    color: $color-heading;
+    color: var(--color-heading);
     margin-left: auto;
     cursor: pointer;
     transition: $transition;
@@ -47,20 +29,18 @@
     border-radius: 7px;
 
     &:hover {
-      color: $color-light;
-      background: $color-primary;
+      color: var(--color-light);
+      background: var(--color-primary);
     }
   }
 
   &__menu {
-    border: 1px solid #0f0;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 7rem);
   }
 
   &__item {
-    border: 1px solid #f00;
     padding-right: $gutter;
 
     &:last-child {
@@ -70,13 +50,11 @@
   }
 
   &__link {
-    border: 1px solid #f00;
-
     display: flex;
     padding: 1rem $gutter;
     gap: 1rem;
     transition: $transition;
-    color: $color-heading;
+    color: inherit;
     position: relative;
 
     &::after {
@@ -84,7 +62,7 @@
       display: block;
       width: 0;
       height: 100%;
-      background: $color-primary;
+      background: var(--color-primary);
       position: absolute;
       top: 0;
       left: 0;
@@ -93,8 +71,8 @@
 
     &:hover {
       padding-left: 2.4rem;
-      color: $color-primary;
-      background: $color-muted-light;
+      color: var(--color-primary);
+      background: var(--color-bg-dark);
     }
 
     &:hover::after {
@@ -102,8 +80,8 @@
     }
 
     &.active {
-      color: $color-primary;
-      background: $color-muted-light;
+      color: var(--color-primary);
+      background: var(--color-bg-dark);
     }
 
     &.active::after {
@@ -119,8 +97,8 @@
   }
 
   &__number {
-    color: $color-light;
-    background: $color-secondary;
+    color: var(--color-light);
+    background: var(--color-secondary);
     padding: 3px 6px 1px;
     font-size: 1.4rem;
     line-height: 0.9;
@@ -163,8 +141,6 @@
     }
 
     &__item {
-      // padding-right: 0;
-
       &:last-child {
         margin-top: auto;
         margin-bottom: 3rem;
