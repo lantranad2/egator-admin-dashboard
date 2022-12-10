@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="sass/main.scss" />
     <script type="module" src="js/script.js"></script>
   </head>
-  <body class="container">
+  <body>
     <nav class="nav">
       <div class="nav__content">
         <a href="#" class="brand nav__brand">
@@ -166,7 +166,7 @@
       </ul>
     </aside>
     <main class="main">
-      <div class="dashboard">
+      <article class="dashboard">
         <h1 class="dashboard__heading">Dashboard</h1>
         <div class="dashboard__date">
           <input class="dashboard__date-input" type="date" />
@@ -230,8 +230,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="orders">
+      </article>
+      <article class="orders">
         <h2 class="orders__heading">Recent Orders</h2>
         <table class="card orders__table">
           <thead class="orders__thead">
@@ -312,9 +312,9 @@
             </tr>
           </tbody>
         </table>
-      </div>
+      </article>
       <div class="updates-sales">
-        <div class="updates">
+        <article class="updates">
           <h2 class="updates__heading">Recent Updates</h2>
           <div class="card updates__list">
             <div class="update">
@@ -360,7 +360,60 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
+        <article class="sales">
+          <h2 class="sales__heading">Sales Analytics</h2>
+          <div class="sales__list">
+            <div class="card sale">
+              <div class="sale__category">
+                <span
+                  class="material-symbols-sharp icon icon--filled icon--bg icon--primary sale__icon"
+                >
+                  shopping_cart
+                </span>
+                <div class="sale__description">
+                  <span class="sale__type">Online Orders</span>
+                  <span class="sale__time">Last 24 hours</span>
+                </div>
+              </div>
+              <span class="sale__percent sale__percent--up">+39%</span>
+              <span class="sale__number">3849</span>
+            </div>
+            <div class="card sale">
+              <div class="sale__category">
+                <span
+                  class="material-symbols-sharp icon icon--filled icon--bg icon--secondary sale__icon"
+                >
+                  local_mall
+                </span>
+                <div class="sale__description">
+                  <span class="sale__type">Offline Orders</span>
+                  <span class="sale__time">Last 24 hours</span>
+                </div>
+              </div>
+              <span class="sale__percent sale__percent--down">-17%</span>
+              <span class="sale__number">1100</span>
+            </div>
+            <div class="card sale">
+              <div class="sale__category">
+                <span
+                  class="material-symbols-sharp icon icon--filled icon--bg icon--tertiary sale__icon"
+                >
+                  person
+                </span>
+                <div class="sale__description">
+                  <span class="sale__type">New Customers</span>
+                  <span class="sale__time">Last 24 hours</span>
+                </div>
+              </div>
+              <span class="sale__percent sale__percent--up">+25%</span>
+              <span class="sale__number">849</span>
+            </div>
+            <button class="sales__btn">
+              <span class="sales__btn-plus">+</span> Add Products
+            </button>
+          </div>
+        </article>
       </div>
     </main>
   </body>

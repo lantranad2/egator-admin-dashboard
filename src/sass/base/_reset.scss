@@ -51,6 +51,13 @@ body {
   line-height: 1.5;
   background: var(--color-bg);
   overflow-x: hidden;
+
+  width: min(100%, 1400px);
+  margin-inline: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  border: 1px solid #f00;
 }
 
 ul {
