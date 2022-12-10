@@ -1,0 +1,47 @@
+.updates-sales {
+}
+
+.updates {
+  &__heading {
+    color: var(--color-heading);
+    font-size: 2.6rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.update {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-muted);
+
+  & > * {
+    // border: 1px solid #f00;
+  }
+
+  &__img {
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__description {
+  }
+
+  &__name {
+    color: var(--color-heading);
+    font-weight: 600;
+  }
+
+  &__time {
+    font-size: 1.4rem;
+  }
+}
