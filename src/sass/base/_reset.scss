@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,6 +25,10 @@ body {
   --color-bg: #ececec;
   --color-bg-light: #fff;
   --color-bg-dark: #d0d0d0;
+
+  --color-status-pending: #f59f00;
+  --color-status-declined: #d6336c;
+  --color-status-delivered: #20c997;
 
   &.dark-mode {
     // --color-primary: ;
@@ -45,6 +50,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background: var(--color-bg);
+  overflow-x: hidden;
 }
 
 ul {

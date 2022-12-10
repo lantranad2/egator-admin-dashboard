@@ -1,0 +1,86 @@
+@use "../abstracts/mixins" as *;
+
+.orders {
+  &__heading {
+    color: var(--color-heading);
+    font-size: 2.6rem;
+  }
+
+  &__table {
+    width: 100%;
+    padding: 2rem 5px;
+    border-collapse: collapse;
+  }
+
+  &__thead-th {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: var(--color-heading);
+    padding: 5px;
+    border-bottom: 0.5px solid var(--color-muted);
+    font-weight: 600;
+    text-align: left;
+  }
+
+  &__tbody-tr {
+    text-align: center;
+
+    &:hover {
+      background: var(--color-bg);
+    }
+
+    &:nth-child(even) {
+      background: var(--color-bg);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 0.5px solid var(--color-muted);
+    }
+  }
+
+  &__tbody-td {
+    padding: 5px;
+    color: var(--color-muted);
+    font-size: 1.4rem;
+  }
+
+  &__tbody-td-status-pending {
+    color: var(--color-status-pending);
+  }
+
+  &__tbody-td-status-declined {
+    color: var(--color-status-declined);
+  }
+
+  &__tbody-td-status-delivered {
+    color: var(--color-status-delivered);
+  }
+
+  &__tbody-td-details a {
+    text-decoration: underline;
+  }
+
+  @include xs-2 {
+    &__thead-th-name,
+    &__thead-details,
+    &__tbody-td-name,
+    &__tbody-td-details {
+      display: none;
+    }
+  }
+
+  @include md {
+    &__thead-th {
+      writing-mode: horizontal-tb;
+      transform: none;
+      text-align: center;
+    }
+  }
+}
+
+table,
+th,
+td {
+  // border: 1px solid #00f;
+  // border-collapse: collapse;
+}
