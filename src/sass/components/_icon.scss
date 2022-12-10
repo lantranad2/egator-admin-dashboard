@@ -1,4 +1,25 @@
 .icon {
+  &--bg {
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 1.8rem;
+  }
+
+  &--primary {
+    color: var(--color-light);
+    background: var(--color-primary);
+  }
+
+  &--secondary {
+    color: var(--color-light);
+    background: var(--color-secondary);
+  }
+
+  &--tertiary {
+    color: var(--color-light);
+    background: var(--color-tertiary);
+  }
+
   &--filled {
     font-variation-settings: "FILL" 1;
   }

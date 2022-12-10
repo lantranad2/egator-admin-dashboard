@@ -19,6 +19,7 @@
   @include lg {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: min-content;
 
     .dashboard {
     }
@@ -34,17 +35,17 @@
   }
 
   @include xl-2 {
-    grid-template-columns: 5fr 2fr;
+    // grid-template-columns: 5fr 2fr;
 
-    .dashboard {
-    }
+    // .dashboard {
+    // }
 
-    .orders {
-      grid-column: 1 / 2;
-    }
+    // .orders {
+    //   grid-column: 1 / 2;
+    // }
 
-    .updates-sales {
-      grid-row: 1 / span 2;
-    }
+    // .updates-sales {
+    //   grid-row: 1 / span 2;
+    // }
   }
 }

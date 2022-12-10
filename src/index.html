@@ -166,7 +166,71 @@
       </ul>
     </aside>
     <main class="main">
-      <div class="dashboard">Dashboard</div>
+      <div class="dashboard">
+        <h1 class="dashboard__heading">Dashboard</h1>
+        <div class="dashboard__date">
+          <input class="dashboard__date-input" type="date" />
+        </div>
+        <div class="dashboard__totals">
+          <div class="card dashboard__total">
+            <div class="dashboard__total-description">
+              <span
+                class="material-symbols-sharp icon icon--bg icon--filled icon--primary dashboard__total-icon"
+              >
+                analytics
+              </span>
+              <div>
+                <h3 class="dashboard__total-subheading">Total Sales</h3>
+                <h2 class="dashboard__total-heading">$25,024</h2>
+              </div>
+              <span class="dashboard__total-text">Last 24 hours</span>
+            </div>
+            <div
+              class="progress-circle progress-circle--81 dashboard__total-progress"
+            >
+              <span class="progress-circle__percent">81%</span>
+            </div>
+          </div>
+          <div class="card dashboard__total">
+            <div class="dashboard__total-description">
+              <span
+                class="material-symbols-sharp icon icon--bg icon--filled icon--secondary dashboard__total-icon"
+              >
+                bar_chart
+              </span>
+              <div>
+                <h3 class="dashboard__total-subheading">Total Expenses</h3>
+                <h2 class="dashboard__total-heading">$14,160</h2>
+              </div>
+              <span class="dashboard__total-text">Last 24 hours</span>
+            </div>
+            <div
+              class="progress-circle progress-circle--62 dashboard__total-progress"
+            >
+              <span class="progress-circle__percent">62%</span>
+            </div>
+          </div>
+          <div class="card dashboard__total">
+            <div class="dashboard__total-description">
+              <span
+                class="material-symbols-sharp icon icon--bg icon--filled icon--tertiary dashboard__total-icon"
+              >
+                stacked_line_chart
+              </span>
+              <div>
+                <h3 class="dashboard__total-subheading">Total Income</h3>
+                <h2 class="dashboard__total-heading">$10,864</h2>
+              </div>
+              <span class="dashboard__total-text">Last 24 hours</span>
+            </div>
+            <div
+              class="progress-circle progress-circle--44 dashboard__total-progress"
+            >
+              <span class="progress-circle__percent">44%</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="orders">Recent Orders</div>
       <div class="updates-sales">Updates - Sales</div>
     </main>

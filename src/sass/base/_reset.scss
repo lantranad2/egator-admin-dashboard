@@ -17,12 +17,12 @@ body {
   --color-secondary: #ff7a85;
   --color-tertiary: #3af1b8;
   --color-heading: #302f36;
-  --color-muted: #949494;
+  --color-muted: #7a7a7a;
   --color-muted-light: #e1e2f0;
   --color-light: #fff;
 
   --color-bg: #ececec;
-  --color-bg-light: #f7f7f7;
+  --color-bg-light: #fff;
   --color-bg-dark: #d0d0d0;
 
   &.dark-mode {
@@ -34,7 +34,7 @@ body {
     // --color-muted-light: ;
     // --color-light: ;
     --color-bg: #1f2125;
-    --color-bg-light: #1e2224;
+    --color-bg-light: #333536;
     --color-bg-dark: #101010;
   }
 

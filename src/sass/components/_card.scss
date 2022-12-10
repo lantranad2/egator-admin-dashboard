@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as *;
+
+.card {
+  background: var(--color-bg-light);
+  padding: 2rem;
+  border-radius: 7px;
+
+  @include xs-4 {
+    padding: 2rem 1rem;
+  }
+
+  @include xl-2 {
+    // padding: 5px;
+  }
+}
