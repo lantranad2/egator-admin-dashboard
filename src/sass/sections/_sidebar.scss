@@ -11,6 +11,7 @@
   transform: translateX(-101%);
   transition: 0.5s ease-in-out;
   color: var(--color-muted);
+  background: var(--color-bg-light);
 
   &__heading {
     display: flex;
@@ -87,9 +88,6 @@
     &.active::after {
       width: 6px;
     }
-  }
-
-  &__menu-icon {
   }
 
   &__text {

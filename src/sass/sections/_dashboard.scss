@@ -7,6 +7,8 @@
     color: var(--color-heading);
     font-size: 3.6rem;
     line-height: 1;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   &__date {
@@ -14,6 +16,7 @@
     width: max-content;
     padding: 1rem 1.6rem;
     border-radius: 7px;
+    margin: 0 auto;
   }
 
   &__date-input {
@@ -24,6 +27,7 @@
   }
 
   &__totals {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -33,7 +37,6 @@
   &__total {
     width: 100%;
     max-width: 420px;
-    // max-width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,25 +63,14 @@
     font-weight: 800;
   }
 
-  &__total-text {
-  }
+  @include xl-3 {
+    &__totals {
+      flex-direction: row;
+      gap: 1rem;
+    }
 
-  @include xl-2 {
-    // &__totals {
-    //   flex-direction: row;
-    //   gap: 5px;
-    // }
-
-    // &__total-subheading {
-    //   font-size: 1.4rem;
-    // }
-
-    // &__total-heading {
-    //   font-size: 2rem;
-    // }
-
-    // &__total-text {
-    //   font-size: 1.4rem;
-    // }
+    &__total {
+      padding: 2rem 5px;
+    }
   }
 }

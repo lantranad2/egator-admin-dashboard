@@ -31,13 +31,7 @@ body {
   --color-status-delivered: #20c997;
 
   &.dark-mode {
-    // --color-primary: ;
-    // --color-secondary: ;
-    // --color-tertiary: ;
     --color-heading: #fff;
-    // --color-muted: ;
-    // --color-muted-light: ;
-    // --color-light: ;
     --color-bg: #1f2125;
     --color-bg-light: #333536;
     --color-bg-dark: #101010;
@@ -56,8 +50,6 @@ body {
   margin-inline: auto;
   padding-left: $gutter;
   padding-right: $gutter;
-
-  border: 1px solid #f00;
 }
 
 ul {

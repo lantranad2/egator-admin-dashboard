@@ -33,12 +33,12 @@
     background: var(--color-bg-light);
   }
 
-  @include xl-2 {
-    // width: 5rem;
-    // height: 5rem;
+  @include xl-3 {
+    width: 6.8rem;
+    height: 6.8rem;
 
-    // &__percent {
-    //   font-size: 1.2rem;
-    // }
+    &__percent {
+      font-size: 1.4rem;
+    }
   }
 }

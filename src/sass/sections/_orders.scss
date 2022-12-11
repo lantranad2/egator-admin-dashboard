@@ -2,13 +2,14 @@
 
 .orders {
   &__heading {
+    text-align: center;
     color: var(--color-heading);
     font-size: 2.6rem;
+    margin-bottom: 1rem;
   }
 
   &__table {
     width: 100%;
-    padding: 2rem 5px;
     border-collapse: collapse;
   }
 
@@ -16,7 +17,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     color: var(--color-heading);
-    padding: 5px;
+    padding: 2rem 5px;
     border-bottom: 0.5px solid var(--color-muted);
     font-weight: 600;
     text-align: left;
@@ -29,17 +30,13 @@
       background: var(--color-bg);
     }
 
-    &:nth-child(odd) {
-      background: var(--color-bg);
-    }
-
     &:not(:last-child) {
       border-bottom: 0.5px solid var(--color-muted);
     }
   }
 
   &__tbody-td {
-    padding: 5px;
+    padding: 1rem 5px;
     color: var(--color-muted);
     font-size: 1.4rem;
   }
@@ -75,12 +72,9 @@
       transform: none;
       text-align: center;
     }
-  }
-}
 
-table,
-th,
-td {
-  // border: 1px solid #00f;
-  // border-collapse: collapse;
+    &__tbody-td {
+      font-size: 1.6rem;
+    }
+  }
 }
